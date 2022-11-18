@@ -24,7 +24,10 @@ top=newNode;
 
 int pop (){
 
-
+    int output=0;
+    output=top->Data;
+    top=top->next;
+    return output;
 
 
 }
