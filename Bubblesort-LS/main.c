@@ -3,54 +3,53 @@
 #include "bubblesort-LS.h"
 
 void Swap (Node *ptr1, Node *ptr2);
-void BubbleSort(Node *LS);
+void BubbleSort();
 
 void main(void)
 {
+    Add(3);
+    Add(5);
+    Add(7);
+    Add(9);
+    Add(1);
 
-
+    Display();
+    printf("\n");
+    BubbleSort();
+    Display();
 
 }
 
-void BubbleSort(Node *LS)
+void BubbleSort()
 {
-    //int sorted = 0;
-    Node *current=head;
+    Node *current;
+    Node *ptr;
+    ptr=head;
 
-    while(current->Next != tail){
-        if (current->Data > current->Next->Data){
-            Swap(current, current->Next);
-            sorted==0;
-        }
-        current=current->Next;
-    }
-    tail=current;
-
-    }
-
-
-
-
-    /*
-    for(counter = 0; counter < size - 1 && !sorted; counter++)
+    while(ptr->Next != NULL)
     {
-        sorted = 1;
+        current=head;
 
-        for(index = 0; index < size - 1 - counter; index++)
+        while(current->Next != NULL)
         {
-            if(data[index] > data[index + 1])
+
+            if (current->Data > current->Next->Data)
             {
-                Swap(&data[index], &data[index + 1]);
-                sorted = 0;
+                Swap(current, current->Next);
             }
+            current=current->Next;
         }
-    }*/
+        ptr=ptr->Next;
+
+    }
+
+
 }
 
-
-void Swap (Node *ptr1, Node *ptr2){
-int temp=0;
-temp=ptr1->Data;
-ptr1->Data=ptr2->Data;
-ptr2->Data=temp;
+void Swap (Node *ptr1, Node *ptr2)
+{
+    int temp=0;
+    temp=ptr1->Data;
+    ptr1->Data=ptr2->Data;
+    ptr2->Data=temp;
 }
