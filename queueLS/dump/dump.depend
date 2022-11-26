@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1668973060 source:c:\users\dell\desktop\ds-day2\queuels\dump\main.c
+	<stdio.h>
+	<stdlib.h>
+
