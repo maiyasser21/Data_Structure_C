@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1669462108 source:c:\users\dell\desktop\ds-day2\binarysearch\main.c
+	<stdio.h>
+	<stdlib.h>
+	"binarysearch-LS.h"
+
+1669461186 c:\users\dell\desktop\ds-day2\binarysearch\binarysearch-ls.h
+

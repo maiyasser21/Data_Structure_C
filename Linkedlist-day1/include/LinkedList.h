@@ -126,39 +126,5 @@ void InsertAfter(int data, int afterData)
 
 }
 
-int GetCount() {
-
-    Node *current = head;
-    int counter=0;
-
-    while(current != NULL)
-    {
-        counter++;
-        current = current->Next;
-    }
-return counter;
-}
-
-
-int GetDataByIndex(int index){
-    Node *current = head;
-    int i=0;
-    int data_ret=0;
-
-    while(current != NULL)
-    {
-        if (index==i)//indexfound
-        {
-
-        data_ret= current->Data;
-        return data_ret;
-
-        }
-        i++;
-        current = current->Next;
-    }
-
-return;
-}
 
 #endif // LINKEDLIST_H
