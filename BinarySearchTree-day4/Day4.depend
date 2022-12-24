@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1669482080 source:c:\users\dell\downloads\day4\day4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Tree.h"
+
+1669482096 c:\users\dell\downloads\day4\day4\include\tree.h
+
+1671918085 source:c:\users\dell\desktop\ds-labs\binarysearchtree-day4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Tree.h"
+
+1671918233 c:\users\dell\desktop\ds-labs\binarysearchtree-day4\include\tree.h
+
